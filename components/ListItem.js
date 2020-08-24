@@ -1,25 +1,22 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 
-const ListItem = () => {
+const ListItem = (props) => {
   return (
     <View style={styles.itemContainer}>
       <View style={styles.leftContainer}>
         <Image
           style={{ width: 100, height: 100 }}
           source={{
-            uri: 'https://picsum.photos/id/10/200/200',
+            uri: props.imageUrl,
           }}
         />
       </View>
       <View style={styles.rightContainer}>
         <Text numberOfLines={3} style={styles.text}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          {props.title}
         </Text>
-        <Text style={styles.subText}>ReactNews</Text>
+        <Text style={styles.subText}>{props.author}</Text>
       </View>
     </View>
   );
