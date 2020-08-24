@@ -17,3 +17,9 @@
 - テキストレイアウト
   - alignItems: flexDirection の垂直方向に対する位置
   - justifyContent: flexDirection の方向に対する位置
+
+## sec6
+
+- News Api
+  - https://newsapi.org/
+- expo install expo-constants
