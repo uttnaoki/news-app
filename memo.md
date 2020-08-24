@@ -12,5 +12,8 @@
 
 ## sec4
 
-- 画像取得サイト
+- Lorem Picsum(ダミー画像の表示サービス)
   - https://picsum.photos/
+- テキストレイアウト
+  - alignItems: flexDirection の垂直方向に対する位置
+  - justifyContent: flexDirection の方向に対する位置
