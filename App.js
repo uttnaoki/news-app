@@ -14,7 +14,15 @@ export default function App() {
             }}
           />
         </View>
-        <View style={styles.rightContainer} />
+        <View style={styles.rightContainer}>
+          <Text numberOfLines={3}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </Text>
+          <Text>ReactNews</Text>
+        </View>
       </View>
     </View>
   );
@@ -35,11 +43,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   leftContainer: {
-    backgroundColor: 'red',
     width: 100,
   },
   rightContainer: {
-    backgroundColor: 'blue',
     flex: 1,
+    flexDirection: 'column',
   },
 });
