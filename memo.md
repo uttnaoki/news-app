@@ -9,3 +9,8 @@
   2. expo start したターミナルにて ctrl + c で終了できます。
   3. 再起動する際 expo start -c と-c オプションを追加するとキャッシュクリアして再起動できます。
   4. node_modules をクリアしてみる
+
+## sec4
+
+- 画像取得サイト
+  - https://picsum.photos/
