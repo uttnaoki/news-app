@@ -1,26 +1,26 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 
-const ListItem = (props) => {
+const ListItem = ({ imageUrl, title, author, onPress }) => {
   return (
-    <View style={styles.itemContainer}>
+    <TouchableOpacity style={styles.itemContainer} onPress={onPress}>
       <View style={styles.leftContainer}>
-        {!!props.imageUrl && (
+        {!!imageUrl && (
           <Image
             style={{ width: 100, height: 100 }}
             source={{
-              uri: props.imageUrl,
+              uri: imageUrl,
             }}
           />
         )}
       </View>
       <View style={styles.rightContainer}>
         <Text numberOfLines={3} style={styles.text}>
-          {props.title}
+          {title}
         </Text>
-        <Text style={styles.subText}>{props.author}</Text>
+        <Text style={styles.subText}>{author}</Text>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 

@@ -23,3 +23,15 @@
 - News Api
   - https://newsapi.org/
 - expo install expo-constants
+
+## sec7
+```sh
+# React Navigation インストール
+npm install @react-navigation/native
+
+# Installing dependencies into an Expo managed project
+expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+
+# createStackNavigator
+npm install @react-navigation/stack
+```
