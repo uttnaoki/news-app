@@ -39,3 +39,10 @@ npm install @react-navigation/stack
 # react-native-webview
 expo install react-native-webview
 ```
+
+## sec8
+
+```sh
+# Redux
+npm install redux react-redux
+```
