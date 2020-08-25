@@ -25,6 +25,7 @@
 - expo install expo-constants
 
 ## sec7
+
 ```sh
 # React Navigation インストール
 npm install @react-navigation/native
@@ -34,4 +35,7 @@ expo install react-native-gesture-handler react-native-reanimated react-native-s
 
 # createStackNavigator
 npm install @react-navigation/stack
+
+# react-native-webview
+expo install react-native-webview
 ```
