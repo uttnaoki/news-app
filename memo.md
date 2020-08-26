@@ -45,4 +45,15 @@ expo install react-native-webview
 ```sh
 # Redux
 npm install redux react-redux
+
+# react-native-debugger
+brew update && brew cask install react-native-debugger
+
+# redux-devtools-extension
+npm install --save redux-devtools-extension
 ```
+
+- React Native Debugger
+  - `cmd+space`でアプリを検索し、起動
+  - 最初は 8081 ポートで立ち上がるため、ポートを変更
+    - 上部バーから`Debugger > New Window > confirm`(自動で 19001 に設定される)
