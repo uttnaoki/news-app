@@ -57,3 +57,8 @@ npm install --save redux-devtools-extension
   - `cmd+space`でアプリを検索し、起動
   - 最初は 8081 ポートで立ち上がるため、ポートを変更
     - 上部バーから`Debugger > New Window > confirm`(自動で 19001 に設定される)
+
+```sh
+# react-navigation/bottom-tabs
+npm install @react-navigation/bottom-tabs
+```
