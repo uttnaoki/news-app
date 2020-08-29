@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, FlatList, SafeAreaView } from 'react-native';
 import ListItem from '../components/ListItem';
+import Loading from '../components/Loading';
 import Constants from 'expo-constants';
 import axios from 'axios';
 
@@ -8,8 +9,10 @@ const URL = `http://newsapi.org/v2/top-headlines?country=jp&apiKey=${Constants.m
 
 export default HomeScreen = ({ navigation }) => {
   const [articles, setArticles] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   const fetchArticles = async () => {
+    setIsLoading(true);
     try {
       const response = await axios.get(URL);
       setArticles(response.data.articles);
@@ -17,6 +20,7 @@ export default HomeScreen = ({ navigation }) => {
     } catch (error) {
       console.error(error);
     }
+    setIsLoading(false);
   };
 
   useEffect(() => {
@@ -37,6 +41,7 @@ export default HomeScreen = ({ navigation }) => {
         )}
         keyExtractor={(item, index) => index.toString()}
       />
+      {isLoading && <Loading />}
     </SafeAreaView>
   );
 };
