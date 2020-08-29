@@ -61,4 +61,7 @@ npm install --save redux-devtools-extension
 ```sh
 # react-navigation/bottom-tabs
 npm install @react-navigation/bottom-tabs
+
+# redux-persist (変数永続化)
+npm install redux-persist
 ```
